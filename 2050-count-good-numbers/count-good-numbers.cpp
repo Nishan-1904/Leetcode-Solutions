@@ -15,8 +15,8 @@ public:
     }
     int countGoodNumbers(long long n) {
         const long long mod = 1000000007;
-        long long even = (n + 1) / 2;  // ceil(n / 2)
-        long long odd = n / 2;         // floor(n / 2)
+        long long even = (n + 1) / 2;  
+        long long odd = n / 2;         
         return (pow(5,even,mod)*pow(4,odd,mod))% mod;
     }
 };
